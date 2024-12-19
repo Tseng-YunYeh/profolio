@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeanTsengg</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <img src="https://s2.svgbox.net/social.svg?ic=youtube&color=ff0000" width="32" height="32">
+                    <a href="https://www.youtube.com/@SeanTsengg" target="_blank"><div class="logo-text">SeanTsengg</div></a>                
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="video.html">Video</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="login.html" target="_blank">Login</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="login-box">
+                <h2>Login</h2>
+                <form action="">
+                    <div class="user-box">
+                        <input type="text" required>
+                        <label for="">Username</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="password" required>
+                        <label for="">password</label>
+                    </div>
+                    <a id="a1" href="">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>Submit
+                    </a>
+                </form>
+            </div>
+        </div>
+     </div>
+     <!---typed js for typing text effect-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        /** creating button click show hide navbar **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+     </script>
+</body>
+</html>
