@@ -318,7 +318,7 @@ input:checked + label .description {
         right:-100%;
         bottom: 0;
         width: 40vw;
-        height: 100vh;
+        height: 70vh;
         background-color: #222;
         z-index: 3;
         box-shadow: 5px 13px 30px rgba(0,0,0,0.1);

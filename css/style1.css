@@ -522,7 +522,7 @@ nav .navlinks li a:hover{
         right:-100%;
         bottom: 0;
         width: 40vw;
-        height: 120vh;
+        height: 90vh;
         background-color: #222;
         z-index: 3;
         box-shadow: 5px 13px 30px rgba(0,0,0,0.1);
