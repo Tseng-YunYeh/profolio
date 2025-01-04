@@ -22,20 +22,28 @@
                     <a href="https://www.youtube.com/@SeanTsengg" target="_blank"><div class="logo-text">SeanTsengg</div></a>                
                 </div>
                 <nav>
-                    <div class="togglebtn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <ul class="navlinks">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="video.html">Video</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="login.html" target="_blank">Login</a></li>
-                    </ul>
+                  <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="img.html">Photos</a></li>
+                      <li><a href="video.html">Video</a></li>
+                      <li><a href="#">Blog</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                    <li id="login"><a href="login.html">Login</a></li>
+                  </ul>
                 </nav>
+                <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+                  <ul class="mobile-menu">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="img.html">Photos</a></li>
+                      <li><a href="video.html">Video</a></li>
+                      <li><a href="#">Blog</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                    <li id="login"><a href="login.html">Login</a></li>
+                  </ul>
+                </div>
             </header>
             <div class="container2">
               <span class="big-circle"></span>
@@ -129,5 +137,6 @@
         })
      </script>
      <script src="js/app.js"></script>
+     <script src="js/script.js"></script>
 </body>
 </html>
