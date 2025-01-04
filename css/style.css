@@ -17,12 +17,14 @@ body{
     height: 100%;
     min-height: 100vh;
     background: #222;
+    
 }
 .wrapper{
     width:1280px;
     max-width: 95%;
     margin: 0 auto;
     padding: 0 20px;
+    overflow: hidden;
 }
 header{
     padding: 40px 0 20px;
@@ -141,6 +143,7 @@ ul {
     justify-content: space-around;
     align-items: center;
     padding-top:4rem;
+    
 }
 .container .hero-pic{
     width: 300px;
@@ -227,13 +230,16 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
+   
 }
 
 .container1 {
     height: 400px;
     display: flex;
-    flex-wrap: wrap;
+    
     justify-content: start;
+    overflow-y:hidden;
+    
 }
 
 .card {
@@ -241,7 +247,7 @@ ul {
     border-radius: .75rem;
     background-size: cover;
     cursor: pointer;
-    overflow: hidden;
+
     border-radius: 2rem;
     margin: 0 10px;
     display: flex;
