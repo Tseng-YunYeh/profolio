@@ -11,6 +11,7 @@
 }
 body{
     overflow-x: hidden;
+    
 }
 .hero-header{
     width:100%;
@@ -24,7 +25,8 @@ body{
     max-width: 95%;
     margin: 0 auto;
     padding: 0 20px;
-    overflow: hidden;
+    overflow:hidden;
+  
 }
 header{
     padding: 40px 0 20px;
@@ -32,6 +34,7 @@ header{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    
 }
 .logo{
     display: inline-flex;
@@ -230,7 +233,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-   
+
 }
 
 .container1 {
@@ -238,7 +241,7 @@ ul {
     display: flex;
     
     justify-content: start;
-    overflow-y:hidden;
+    overflow-y: hidden;
     
 }
 
@@ -334,10 +337,10 @@ input:checked + label .description {
     background-image: url('../images/Screenshot\ 2024-12-17\ 182458.png');
 }
 .card[for="c5"] {
-    background-image: url('./img4.jpeg');
+    background-image: url('../images/Screenshot\ 2025-01-03\ 145000.png');
 }
 .card[for="c6"] {
-    background-image: url('./img4.jpeg');
+    background-image: url('../images/Screenshot\ 2025-01-03\ 145104.png');
 }
 
 

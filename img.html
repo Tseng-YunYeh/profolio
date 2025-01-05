@@ -22,10 +22,9 @@
   overflow: hidden;
   pointer-events: none;
 }
-
 .carousel-item {
-  --items: 10;
-  --width: clamp(150px, 30vw, 300px);
+  --items: 16;
+  --width: clamp(150px, 30vw, 350px);
   --height: clamp(200px, 40vw, 400px);
   --x: calc(var(--active) * 800%);
   --y: calc(var(--active) * 200%);
@@ -37,7 +36,7 @@
   width: var(--width);
   height: var(--height);
   margin: calc(var(--height) * -0.5) 0 0 calc(var(--width) * -0.5);
-  border-radius: 10px;
+  border-radius: 12px;
   top: 50%;
   left: 50%;
   -webkit-user-select: none;
@@ -45,13 +44,13 @@
       -ms-user-select: none;
           user-select: none;
   transform-origin: 0% 10%;
-  box-shadow: 0 10px 50px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 50px 15px rgba(0, 0, 0, 0.6);
   background: black;
   pointer-events: all;
   transform: translate(var(--x), var(--y)) rotate(var(--rot));
   transition: transform 1.2s cubic-bezier(0, 0.02, 0, 1);
-}
 
+}
 .carousel-item .carousel-box {
   position: absolute;
   z-index: 1;
@@ -59,7 +58,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  transition: opacity 0.8s cubic-bezier(0, 0.01, 0, 1);
+  transition: opacity 0.8s cubic-bezier(0, 0.02, 0, 1);
   opacity: var(--opacity);
   font-family: "Orelo-sw-db", serif;
 }
@@ -93,13 +92,14 @@
   font-size: clamp(20px, 10vw, 80px);
 }
 
-      .carousel-item img {
+.carousel-item img {
         width: 100%;
         height: 100%;
         -o-object-fit: cover;
           object-fit: cover;
         pointer-events: none;
       }
+
       .layout {
         position: absolute;
         z-index: 0;
@@ -175,6 +175,33 @@
       width: 35px;
       height: 35px;
     }
+    .cursor {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  --size: 40px;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin: calc(var(--size) * -0.5) 0 0 calc(var(--size) * -0.5);
+  transition: transform 0.85s cubic-bezier(0, 0.02, 0, 1);
+  display: none;
+  pointer-events: none;
+}
+
+
+@media (pointer: fine) {
+  .cursor {
+    display: block;
+  }
+}
+
+.cursor2 {
+  --size: 2px;
+  transition-duration: 0.7s;
+}
 
 
 
@@ -238,7 +265,7 @@
     <div class="carousel">
         <div class="carousel-item">
             <div class="carousel-box">
-                <div class="title">Paris</div>
+                <div class="title">2017/02/16</div>
                 <div class="num">01</div>
                 <img src="images/465982702_9118650391512822_3571495087761975134_n.jpg" />
             </div>
@@ -246,7 +273,7 @@
     
         <div class="carousel-item">
             <div class="carousel-box">
-                <div class="title">Warsaw</div>
+                <div class="title">2017/02/16</div>
                 <div class="num">02</div>
                 <img src="images/465968526_9118650041512857_2336774681854529674_n.jpg" />
             </div>
@@ -254,7 +281,7 @@
     
         <div class="carousel-item">
             <div class="carousel-box">
-                <div class="title">Madrid</div>
+                <div class="title">2019/02/28</div>
                 <div class="num">03</div>
                 <img
                     src="images/52786715_2399039446807317_5544043763925516288_n.jpg"
@@ -264,7 +291,7 @@
     
         <div class="carousel-item">
             <div class="carousel-box">
-                <div class="title">Sydney</div>
+                <div class="title">2017/02/16</div>
                 <div class="num">04</div>
                 <img src="images/465727554_9118650228179505_8834679071491976578_n.jpg" />
             </div>
@@ -272,7 +299,7 @@
     
         <div class="carousel-item">
             <div class="carousel-box">
-                <div class="title">Istanbul</div>
+                <div class="title">2017/02/16</div>
                 <div class="num">05</div>
                 <img src="images/465977822_9118650038179524_8780899389290531415_n.jpg" />
             </div>
@@ -280,7 +307,7 @@
     
         <div class="carousel-item">
             <div class="carousel-box">
-                <div class="title">Prague</div>
+                <div class="title">2015/07/19</div>
                 <div class="num">06</div>
                 <img src="images/464970035_9074714029239792_6689736525021621943_n.jpg" />
             </div>
@@ -288,7 +315,7 @@
     
         <div class="carousel-item">
             <div class="carousel-box">
-                <div class="title">Munich</div>
+                <div class="title">2015/12/20</div>
                 <div class="num">07</div>
                 <img src="images/465423299_9087321751312353_3175002049971625286_n.jpg" />
             </div>
@@ -296,7 +323,7 @@
     
         <div class="carousel-item">
             <div class="carousel-box">
-                <div class="title">Venice</div>
+                <div class="title">2018/06/27</div>
                 <div class="num">08</div>
                 <img src="images/36245176_2031794160198516_6247121122777628672_n.jpg" />
             </div>
@@ -304,18 +331,60 @@
     
         <div class="carousel-item">
             <div class="carousel-box">
-                <div class="title">Oslo</div>
+                <div class="title">2019/02/28</div>
                 <div class="num">09</div>
                 <img src="images/52806666_2399032313474697_7965537409058209792_n.jpg" />
             </div>
         </div>
         <div class="carousel-item">
             <div class="carousel-box">
-                <div class="title">London</div>
+                <div class="title">2019/08/19</div>
                 <div class="num">10</div>
                 <img src="images/67757069_2669912803053312_2442826236590817280_n.jpg" />
             </div>
         </div>
+        <div class="carousel-item">
+          <div class="carousel-box">
+              <div class="title">2019/08/19</div>
+              <div class="num">11</div>
+              <img src="images/37294461_2064177400293525_7515967144778006528_n.jpg" />
+          </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-box">
+            <div class="title">2019/08/19</div>
+            <div class="num">12</div>
+            <img src="images/94633331_3243364042374849_3358423374727479296_n.jpg" />
+        </div>
+    </div>
+    <div class="carousel-item">
+      <div class="carousel-box">
+          <div class="title">2019/08/19</div>
+          <div class="num">13</div>
+          <img src="images/465902096_9118650238179504_6156671528807486828_n.jpg" />
+      </div>
+  </div>
+  <div class="carousel-item">
+    <div class="carousel-box">
+        <div class="title">2019/08/19</div>
+        <div class="num">14</div>
+        <img src="images/68264743_2669913839719875_4435712639850512384_n.jpg" />
+    </div>
+  </div>
+  <div class="carousel-item">
+    <div class="carousel-box">
+        <div class="title">2019/08/19</div>
+        <div class="num">15</div>
+        <img src="images/241052102_4685553188155920_4459871965276809272_n.jpg"  />
+    </div>
+  </div>
+  <div class="carousel-item">
+    <div class="carousel-box">
+        <div class="title">2019/08/19</div>
+        <div class="num">16</div>
+        <img src="images/240954676_4685554241489148_1563284790187519608_n.jpg" />
+    </div>
+  </div>
     </div>
     
 
@@ -343,7 +412,8 @@
             ></path>
         </symbol>
     </svg>
-    
+    <div class="cursor"></div>
+    <div class="cursor cursor2"></div>
 
     <a id="source-link" class="meta-link" href="contact.html">
       <span class="roboto-mono">Contact</span>
@@ -401,7 +471,7 @@ Click on Items
 --------------------*/
 $items.forEach((item, i) => {
   item.addEventListener('click', () => {
-    progress = (i/$items.length) * 100 + 10
+    progress = (i/$items.length) * 100 + 6.5
     animate()
   })
 })
